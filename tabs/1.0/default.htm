@@ -1,0 +1,33 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml"> 
+	<head>
+		<title>JQuery Tabs</title>
+		<link rel="stylesheet" type="text/css" href="css/tabs.css"/>
+		<script type="text/javascript" src="js/jquery-1.4.4.min.js"></script>
+		<script type="text/javascript" src="js/jquery.tabs.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$('#tabs1').tabs();
+				$('#tabs2').tabs();
+			});
+		</script>
+	</head>
+	<body>
+	
+		<div id="tabs1">
+			<ul class="tabs">
+				<li><a href="#tabs1_tab1">Tab 1</a></li>
+				<li><a href="#tabs1_tab2">Tab 2</a></li>
+			</ul>
+			<div class="contents">
+				<div id="tabs1_tab1" class="content">
+					This is tabs 1, content 1
+				</div>
+				<div id="tabs1_tab2" class="content">
+					This is tabs 1, content 2
+				</div>
+			</div>
+		</div>
+		
+	</body>
+</html>

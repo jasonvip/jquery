@@ -1,0 +1,17 @@
+[
+    {
+        "longitude": 0.140,
+        "latitude": 51.667,
+        "title":"This is marker 1"
+    },
+    {
+    	"longitude": -0.514,
+    	"latitude": 51.546,
+        "title":"This is marker 2"
+    },
+    {
+    	"longitude":0.156,
+    	"latitude": 51.277,
+        "title":"This is marker 3"
+    }
+]
