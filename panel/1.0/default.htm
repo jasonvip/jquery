@@ -1,0 +1,36 @@
+<html>
+	<head>
+		<title>JQuery sliding panel</title>
+		<style type="text/css">
+
+		</style>
+		<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+		<script type="text/javascript" src="js/jquery-1.4.4.min.js"></script>
+		<script type="text/javascript" src="js/jquery.gmap.1.0.js"></script>
+		<script type="text/javascript" src="js/jquery.panel.1.0.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/global.css"/>
+		<link rel="stylesheet" type="text/css" href="css/layout.css"/>
+		<script type="text/javascript">
+			$(document).ready(function(){
+
+				$('#map').gmap({
+					center:new google.maps.LatLng(51.50067,-0.12562)
+				});
+
+				$('#panel').panel({opened:200,closed:25});
+
+			});
+		</script>
+	</head>
+	<body>
+		<div id="map"></div>
+		<div id="panel">
+			<div id="panel-tab">
+				<a id="panel-tab-toggle" href="#" class="show">show</a>
+			</div>
+			<div id="panel-content">
+				<div style="padding-top:20px;color:#ffffff">This is some content in the content panel</p>
+			</div>
+		</div>
+	</body>
+</html>

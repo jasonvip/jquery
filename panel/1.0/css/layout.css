@@ -1,0 +1,30 @@
+#map
+{
+	width:100%;
+	height:100%;
+	position:absolute;
+	z-index:1
+}
+#panel
+{
+	width:100%;
+	height:25px;
+	position:absolute;
+	z-index:2;
+}
+#panel-tab
+{
+	width:100%;
+	height:20px;
+	background-image:url('../img/tab.png');
+	background-repeat:no-repeat;
+	padding-left:30px;
+	padding-right:auto;
+	border-bottom:solid 5px #000;
+}
+#panel-content
+{
+	width:100%;
+	height:180px;
+	background-color:#000;
+}
