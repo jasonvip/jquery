@@ -58,7 +58,7 @@
 					$('#panel-tab-toggle').attr('class','show');					
 				}
 
-				//$(opts.id).attr('style',style);
+				return this;
 				
 			});			
 
