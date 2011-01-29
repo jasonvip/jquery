@@ -1,0 +1,81 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml"> 
+<head> 
+	<head>
+		<title>JQuery Wizard</title>
+		<link rel="stylesheet" type="text/css" href="css/layout.css"/>
+		<script type="text/javascript" src="js/jquery-1.4.4.min.js"></script>
+		<script type="text/javascript" src="js/jquery.wizard.1.0.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+			
+				$('#wizard1').wizard();
+				
+				$('.finish').click(function(e){
+				
+					e.preventDefault();
+					
+					alert('You could do some validtion here using a Jquery validation plugin before posting to server');
+					
+				});
+				
+			});
+		</script>
+	</head>
+	<body>
+	
+		<form method="post" action="/">
+		
+			<div id="wizard1" class="wizard">
+				<div class="progress">
+					<ul>
+						<li class="selected"><a href="#step1">1</a></li>
+						<li><a href="#step2">2</a></li>
+						<li><a href="#step3">3</a></li>
+					</ul>
+				</div>
+				<div class="steps">
+					<div id="step1" class="step">
+						<h2>Wizard Step 1&nbsp;&nbsp;<strong>Your Name</strong></h2>
+						<div class="row">
+							<div class="label"><label>Forename</label></div>
+							<div class="field"><input type="text" name="forename"/></div>
+						</div>
+						<div class="row">
+							<div class="label"><label>Surname</label></div>
+							<div class="field"><input type="text" name="surname"/></div>
+						</div>
+						<div class="row">
+							<div class="label">&nbsp;</div>
+							<div class="field"><input type="button" value="Next" class="next"/></div>
+						</div>
+					</div>
+					<div id="step2" class="step">
+						<h2>Wizard Step 2&nbsp;&nbsp;<strong>Your Address</strong></h2>
+						<div class="row">
+							<div class="label"><label>Address</label></div>
+							<div class="field"><input type="text" name="address"/></div>
+						</div>
+						<div class="row">
+							<div class="label">&nbsp;</div>
+							<div class="field"><input type="button" value="Back" class="back"/>&nbsp;<input type="button" value="Next" class="next"/></div>
+						</div>
+					</div>
+					<div id="step3" class="step">
+						<h2>Wizard Step 3&nbsp;&nbsp;<strong>Telephone</strong></h2>
+						<div class="row">
+							<div class="label"><label>Telephone</label></div>
+							<div class="field"><input type="text" name="telephone"/></div>
+						</div>
+						<div class="row">
+							<div class="label">&nbsp;</div>
+							<div class="field"><input type="button" value="Back" class="back"/>&nbsp;<input type="submit" value="Finish" class="finish"/></div>
+						</div>					
+					</div>
+				</div>
+			</div>
+		
+		</form>
+	
+	</body>
+</html>
